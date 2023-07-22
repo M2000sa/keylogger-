@@ -9,17 +9,20 @@ class M2000:
         self.root.title("M2000 - Keylogger")
         self.root.resizable(True, True)
 
+        # Change the default Tkinter icon to a custom icon
+        self.root.iconbitmap('/icons/icon.ico')
+
         # Initialize variables to store key logs and key strokes status
         self.key_list = []
         self.key_strokes = ""
         self.x = False
 
         # Create GUI elements
-        self.empty_label()  # Add some space between GUI elements
-        self.title_label()  # Add a label with the title of the keylogger
-        self.start_button()  # Add a button to initiate the keylogging attack
-        self.end_button()  # Add a button to end the keylogging attack and close the GUI
-        self.hacker_label()  # Add a label to indicate the "Hacker" status (for demonstration purposes)
+        self.empty_label()  #  some space between GUI elements
+        self.title_label()  #  label with the title of the keylogger
+        self.start_button()  #  button to initiate the keylogging attack
+        self.end_button()  #  button to end the keylogging attack and close the GUI
+        self.hacker_label()  #  label to indicate the "Hacker" status (for demonstration purposes)
 
     def empty_label(self):
         # Add empty labels to create some space between GUI elements
